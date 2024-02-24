@@ -1,0 +1,111 @@
+@font-face {
+    font-family: kidos;
+    src: url(./KIdDOS-Regular.otf);
+}
+
+body{
+    background-color: #EADAC7;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0px;
+}
+
+h1{
+    font-family: kidos;
+    font-size: 55px;
+    margin: 10px;
+    margin-bottom: 20px;
+    color: #c46461;
+}
+
+.logContainer{
+    width: 55%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #E68581;
+    border-radius: 25px;
+    border: 10px solid #D4D9A0;
+    padding: 2rem;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logContainer img{
+    height: 10rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    border: #ffffff 5px solid;
+}
+
+.addBtn{
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: #D4D9A0;
+    color: white;
+    font-family: kidos;
+    font-size: 25px;
+}
+
+.addBtn:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.log{
+    background-color: #E79F99;
+    border-radius: 30px;
+    width: 95%;
+    height: 10%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-family: kidos;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #EADAC7 2px solid;
+}
+
+.date{
+    margin: 0px;
+}
+
+.logOpt a{
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 90%;
+    text-align: center;
+    font-size: 22px;
+}
+
+.editBtn:hover{
+    transform: scale(1.3);
+    transition: 0.2s;
+}
+
+.editBtn{
+    color: #8a9ac5;
+}
+
+.showBtn{
+    color: #ffffff;
+}
+
+.showBtn:hover{
+    color: #c46461;
+    transform: scale(1.5);
+    transition: 0.3s;
+    
+}
+
+.logOpt{
+    margin-top: 0.8rem;
+}

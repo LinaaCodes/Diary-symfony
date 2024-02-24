@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}my diary
+{% endblock %}
+
+{% block body %}
+	<h1>My Diary Logs</h1>
+
+	<a href="{{ path('app_logs_new') }}" class="addBtn">add new Log</a>
+
+	<div class="logContainer">
+
+
+		{% for log in logs %}
+			<div class="log">
+
+
+				{% if log.date == true %}
+					<p class="date">{{ log.date }}</p>
+				{% endif %}
+
+
+				<p class="logText">{{ log.log }}</p>
+
+				{% if log.img == true %}
+					<img src=" {{ log.img }} ">
+				{% endif %}
+
+
+				<div class="logOpt">
+					<a href="{{ path('app_logs_show', {'id': log.id}) }}" class="showBtn">
+						<i class="fa-regular fa-eye"></i>
+					</a>
+					<a href="{{ path('app_logs_edit', {'id': log.id}) }}" class="editBtn">
+						<i class="fa-solid fa-pen"></i>
+					</a>
+				</div>
+
+			</div>
+		{% else %}
+			<div>
+				<p colspan="5">no records found</p>
+			</div>
+		{% endfor %}
+
+	</div>
+
+{% endblock %}
