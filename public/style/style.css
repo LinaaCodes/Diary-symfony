@@ -14,10 +14,11 @@ body{
 
 h1{
     font-family: kidos;
-    font-size: 55px;
+    font-size: 60px;
     margin: 10px;
     margin-bottom: 20px;
     color: #c46461;
+    letter-spacing: 5px;
 }
 
 .logContainer{
@@ -101,11 +102,148 @@ h1{
 
 .showBtn:hover{
     color: #c46461;
-    transform: scale(1.5);
+    scale: 1.3;
     transition: 0.3s;
-    
 }
+
 
 .logOpt{
     margin-top: 0.8rem;
+}
+
+.deleteBtn{
+    border-radius: 90%;
+    color: grey;
+    border: #c03d39;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.deleteBtn:hover{
+    color: #c03d39;
+    transition: 0.2s;
+}
+
+.editContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D4D9A0;
+    width: 60%;
+    border: #E68581 5px solid;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.editContainer form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.editContainer input{
+    margin-bottom: 2rem;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-family: kidos;
+    border-radius: 20px;
+    padding: 20px;
+    height: 18%;
+}
+
+.editContainer textarea{
+    margin-bottom: 2rem;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-family: kidos;
+    border-radius: 20px;
+    padding: 20px;
+    height: 8rem;
+    width: 230%;
+    text-align: center;
+}
+
+.editContainer label{
+    font-family: kidos;
+    font-size: 25px;
+    color: #E68581;
+}
+
+.editContainer button{
+    background-color: #a0d9a0;
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    border: white 3px solid;
+    font-family: kidos;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.homeBtn{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(168, 167, 167);
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 25px;
+    margin-top: 2rem;
+
+}
+
+.homeBtn:hover{
+    transform: scale(0.8);
+    transition: 0.2s;
+    background-color: #c46461;
+}
+
+.showContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2e8e8;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 2rem;
+    border: 10px #D4D9A0 solid;
+}
+
+.showContainer img{
+    height: 25rem;
+    margin-right: 1.5rem;
+    border-radius: 20px;
+}
+
+.showLogContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.showLogContainer p{
+    height: 50%;
+    font-family: kidos;
+    font-size: 20px;
+    color: #c46461;
+}
+
+.showEditBtn{
+    font-size: 21px;
+    color: #b2b2b2;
+    margin-left: 95%;
+}
+
+.showEditBtn:hover{
+    color: #E79F99;
+    transition: 0.2s;
+
 }

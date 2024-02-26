@@ -1,4 +1,20 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+{# {{ form_widget(form) }} #}
+
+{{ form_label(form.date, 'date :') }}
+{{ form_widget(form.date) }}
+
+
+{{ form_label(form.log, 'log : ') }}
+{{ form_widget(form.log) }}
+
+
+{{ form_label(form.img, 'enter image url : ' )}}
+{{ form_widget(form.img) }}
+
+
+<button class="btn">
+	{{ button_label|default('upload') }}
+</button>
+
 {{ form_end(form) }}

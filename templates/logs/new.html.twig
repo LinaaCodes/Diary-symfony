@@ -1,11 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Logs{% endblock %}
+{% block title %}New
+{% endblock %}
 
 {% block body %}
-    <h1>Create new Logs</h1>
+	<a href="{{ path('app_logs_index') }}" class="homeBtn">
+		<i class="fa-solid fa-house"></i>
+	</a>
 
-    {{ include('logs/_form.html.twig') }}
+	<h1>Write a new log</h1>
 
-    <a href="{{ path('app_logs_index') }}">back to list</a>
+	<div class="editContainer">
+		{{ include('logs/_form.html.twig') }}
+	</div>
+
 {% endblock %}

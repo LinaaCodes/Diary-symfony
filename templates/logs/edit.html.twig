@@ -1,13 +1,26 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Logs{% endblock %}
+{% block title %}Edit Log
+{% endblock %}
 
 {% block body %}
-    <h1>Edit Logs</h1>
 
-    {{ include('logs/_form.html.twig', {'button_label': 'Update'}) }}
+	<a href="{{ path('app_logs_index') }}" class="homeBtn">
+		<i class="fa-solid fa-house"></i>
+	</a>
 
-    <a href="{{ path('app_logs_index') }}">back to list</a>
+	<h1>editor mode</h1>
 
-    {{ include('logs/_delete_form.html.twig') }}
+	<div class="editContainer">
+		<div class="editForm">
+			{{ include('logs/_form.html.twig', {'button_label': 'update'}) }}
+		</div>
+
+
+	</div>
+
+	<div class="deleteDiv">
+		{{ include('logs/_delete_form.html.twig') }}
+	</div>
+
 {% endblock %}
