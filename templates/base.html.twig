@@ -22,19 +22,36 @@
 		{% if app.user  %}
 
 			<header>
-				<div class="navOpt">
-					<a href="">
-						<i class="fa-solid fa-user"></i>
-					</a>
-				</div>
-
-				<a href="/logout">logout</a>
+				<a href="/logout">
+					<button>
+						<i class="fa-solid fa-right-from-bracket"></i>
+						logout
+					</button>
+				</a>
 			</header>
 
-			{% endif%}
+		{% else %}
+
+			<header>
+				<a href="/login">
+					<button>
+						<i class="fa-solid fa-right-from-bracket"></i>
+						log in
+					</button>
+				</a>
+
+				<p>or</p>
+
+				<a href="/login">
+					<button>
+						sign in
+					</button>
+				</a>
+			</header>
+
+		{% endif %}
 
 
-			{% block body %}{% endblock %}
-		</body>
+		{% block body %}{% endblock %}
 	</body>
-</html>
+</html></body></html>
