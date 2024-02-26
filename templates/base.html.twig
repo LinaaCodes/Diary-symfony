@@ -19,14 +19,22 @@
 
 	<body>
 
-		<header>
-			<div class="navOpt">
-				<a href="">
-					<i class="fa-solid fa-user"></i>
-				</a>
-			</div>
-		</header>
+		{% if app.user  %}
 
-		{% block body %}{% endblock %}
+			<header>
+				<div class="navOpt">
+					<a href="">
+						<i class="fa-solid fa-user"></i>
+					</a>
+				</div>
+
+				<a href="/logout">logout</a>
+			</header>
+
+			{% endif%}
+
+
+			{% block body %}{% endblock %}
+		</body>
 	</body>
 </html>
